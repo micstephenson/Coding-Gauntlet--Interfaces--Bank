@@ -1,0 +1,168 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\michaylia.stephenson\\OneDrive - Zenith OpCo Limited\\Documents\\Progamming C#\\Home\\GitHub\\Coding-Gauntlet--Interfaces--Bank-\\BankInterface\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2F592639-ECE9-4192-BC5C-1CD7F85ABD28}|BankInterface\\BankInterface.csproj|c:\\users\\michaylia.stephenson\\onedrive - zenith opco limited\\documents\\progamming c#\\home\\github\\coding-gauntlet--interfaces--bank-\\bankinterface\\bankinterface\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F592639-ECE9-4192-BC5C-1CD7F85ABD28}|BankInterface\\BankInterface.csproj|solutionrelative:bankinterface\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F592639-ECE9-4192-BC5C-1CD7F85ABD28}|BankInterface\\BankInterface.csproj|c:\\users\\michaylia.stephenson\\onedrive - zenith opco limited\\documents\\progamming c#\\home\\github\\coding-gauntlet--interfaces--bank-\\bankinterface\\bankinterface\\interface\\ibankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F592639-ECE9-4192-BC5C-1CD7F85ABD28}|BankInterface\\BankInterface.csproj|solutionrelative:bankinterface\\interface\\ibankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F592639-ECE9-4192-BC5C-1CD7F85ABD28}|BankInterface\\BankInterface.csproj|c:\\users\\michaylia.stephenson\\onedrive - zenith opco limited\\documents\\progamming c#\\home\\github\\coding-gauntlet--interfaces--bank-\\bankinterface\\bankinterface\\taskinfo.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2F592639-ECE9-4192-BC5C-1CD7F85ABD28}|BankInterface\\BankInterface.csproj|solutionrelative:bankinterface\\taskinfo.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F592639-ECE9-4192-BC5C-1CD7F85ABD28}|BankInterface\\BankInterface.csproj|c:\\users\\michaylia.stephenson\\onedrive - zenith opco limited\\documents\\progamming c#\\home\\github\\coding-gauntlet--interfaces--bank-\\bankinterface\\bankinterface\\accounts\\savingsaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F592639-ECE9-4192-BC5C-1CD7F85ABD28}|BankInterface\\BankInterface.csproj|solutionrelative:bankinterface\\accounts\\savingsaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F592639-ECE9-4192-BC5C-1CD7F85ABD28}|BankInterface\\BankInterface.csproj|c:\\users\\michaylia.stephenson\\onedrive - zenith opco limited\\documents\\progamming c#\\home\\github\\coding-gauntlet--interfaces--bank-\\bankinterface\\bankinterface\\accounts\\currentaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F592639-ECE9-4192-BC5C-1CD7F85ABD28}|BankInterface\\BankInterface.csproj|solutionrelative:bankinterface\\accounts\\currentaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F592639-ECE9-4192-BC5C-1CD7F85ABD28}|BankInterface\\BankInterface.csproj|c:\\users\\michaylia.stephenson\\onedrive - zenith opco limited\\documents\\progamming c#\\home\\github\\coding-gauntlet--interfaces--bank-\\bankinterface\\bankinterface\\accounts\\mortgageaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F592639-ECE9-4192-BC5C-1CD7F85ABD28}|BankInterface\\BankInterface.csproj|solutionrelative:bankinterface\\accounts\\mortgageaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F592639-ECE9-4192-BC5C-1CD7F85ABD28}|BankInterface\\BankInterface.csproj|c:\\users\\michaylia.stephenson\\onedrive - zenith opco limited\\documents\\progamming c#\\home\\github\\coding-gauntlet--interfaces--bank-\\bankinterface\\bankinterface\\bankinterface.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2F592639-ECE9-4192-BC5C-1CD7F85ABD28}|BankInterface\\BankInterface.csproj|solutionrelative:bankinterface\\bankinterface.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 196,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BankInterface",
+              "DocumentMoniker": "C:\\Users\\michaylia.stephenson\\OneDrive - Zenith OpCo Limited\\Documents\\Progamming C#\\Home\\GitHub\\Coding-Gauntlet--Interfaces--Bank-\\BankInterface\\BankInterface\\BankInterface.csproj",
+              "RelativeDocumentMoniker": "BankInterface\\BankInterface.csproj",
+              "ToolTip": "C:\\Users\\michaylia.stephenson\\OneDrive - Zenith OpCo Limited\\Documents\\Progamming C#\\Home\\GitHub\\Coding-Gauntlet--Interfaces--Bank-\\BankInterface\\BankInterface\\BankInterface.csproj",
+              "RelativeToolTip": "BankInterface\\BankInterface.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-09T13:47:47.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MortgageAccount.cs",
+              "DocumentMoniker": "C:\\Users\\michaylia.stephenson\\OneDrive - Zenith OpCo Limited\\Documents\\Progamming C#\\Home\\GitHub\\Coding-Gauntlet--Interfaces--Bank-\\BankInterface\\BankInterface\\Accounts\\MortgageAccount.cs",
+              "RelativeDocumentMoniker": "BankInterface\\Accounts\\MortgageAccount.cs",
+              "ToolTip": "C:\\Users\\michaylia.stephenson\\OneDrive - Zenith OpCo Limited\\Documents\\Progamming C#\\Home\\GitHub\\Coding-Gauntlet--Interfaces--Bank-\\BankInterface\\BankInterface\\Accounts\\MortgageAccount.cs",
+              "RelativeToolTip": "BankInterface\\Accounts\\MortgageAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T13:45:54.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SavingsAccount.cs",
+              "DocumentMoniker": "C:\\Users\\michaylia.stephenson\\OneDrive - Zenith OpCo Limited\\Documents\\Progamming C#\\Home\\GitHub\\Coding-Gauntlet--Interfaces--Bank-\\BankInterface\\BankInterface\\Accounts\\SavingsAccount.cs",
+              "RelativeDocumentMoniker": "BankInterface\\Accounts\\SavingsAccount.cs",
+              "ToolTip": "C:\\Users\\michaylia.stephenson\\OneDrive - Zenith OpCo Limited\\Documents\\Progamming C#\\Home\\GitHub\\Coding-Gauntlet--Interfaces--Bank-\\BankInterface\\BankInterface\\Accounts\\SavingsAccount.cs",
+              "RelativeToolTip": "BankInterface\\Accounts\\SavingsAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T13:45:36.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CurrentAccount.cs",
+              "DocumentMoniker": "C:\\Users\\michaylia.stephenson\\OneDrive - Zenith OpCo Limited\\Documents\\Progamming C#\\Home\\GitHub\\Coding-Gauntlet--Interfaces--Bank-\\BankInterface\\BankInterface\\Accounts\\CurrentAccount.cs",
+              "RelativeDocumentMoniker": "BankInterface\\Accounts\\CurrentAccount.cs",
+              "ToolTip": "C:\\Users\\michaylia.stephenson\\OneDrive - Zenith OpCo Limited\\Documents\\Progamming C#\\Home\\GitHub\\Coding-Gauntlet--Interfaces--Bank-\\BankInterface\\BankInterface\\Accounts\\CurrentAccount.cs",
+              "RelativeToolTip": "BankInterface\\Accounts\\CurrentAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T13:45:21.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IBankAccount.cs",
+              "DocumentMoniker": "C:\\Users\\michaylia.stephenson\\OneDrive - Zenith OpCo Limited\\Documents\\Progamming C#\\Home\\GitHub\\Coding-Gauntlet--Interfaces--Bank-\\BankInterface\\BankInterface\\Interface\\IBankAccount.cs",
+              "RelativeDocumentMoniker": "BankInterface\\Interface\\IBankAccount.cs",
+              "ToolTip": "C:\\Users\\michaylia.stephenson\\OneDrive - Zenith OpCo Limited\\Documents\\Progamming C#\\Home\\GitHub\\Coding-Gauntlet--Interfaces--Bank-\\BankInterface\\BankInterface\\Interface\\IBankAccount.cs",
+              "RelativeToolTip": "BankInterface\\Interface\\IBankAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T13:44:43.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\michaylia.stephenson\\OneDrive - Zenith OpCo Limited\\Documents\\Progamming C#\\Home\\GitHub\\Coding-Gauntlet--Interfaces--Bank-\\BankInterface\\BankInterface\\Program.cs",
+              "RelativeDocumentMoniker": "BankInterface\\Program.cs",
+              "ToolTip": "C:\\Users\\michaylia.stephenson\\OneDrive - Zenith OpCo Limited\\Documents\\Progamming C#\\Home\\GitHub\\Coding-Gauntlet--Interfaces--Bank-\\BankInterface\\BankInterface\\Program.cs",
+              "RelativeToolTip": "BankInterface\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T13:42:26.589Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "44cb762e-af49-4e80-90e7-604699679ff2",
+        "Display": 0,
+        "X": -337,
+        "Y": 249,
+        "Width": 1578,
+        "Height": 783,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaskInfo.txt",
+              "DocumentMoniker": "C:\\Users\\michaylia.stephenson\\OneDrive - Zenith OpCo Limited\\Documents\\Progamming C#\\Home\\GitHub\\Coding-Gauntlet--Interfaces--Bank-\\BankInterface\\BankInterface\\TaskInfo.txt",
+              "RelativeDocumentMoniker": "BankInterface\\TaskInfo.txt",
+              "ToolTip": "C:\\Users\\michaylia.stephenson\\OneDrive - Zenith OpCo Limited\\Documents\\Progamming C#\\Home\\GitHub\\Coding-Gauntlet--Interfaces--Bank-\\BankInterface\\BankInterface\\TaskInfo.txt",
+              "RelativeToolTip": "BankInterface\\TaskInfo.txt",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-09T13:43:19.883Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
