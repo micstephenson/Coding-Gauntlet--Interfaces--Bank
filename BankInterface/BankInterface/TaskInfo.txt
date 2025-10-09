@@ -1,0 +1,40 @@
+﻿The next task will be a fresh project and involved interfaces and bank accounts. 
+IE the IBankAccount, with a look to actually use an interface as the base for the list for many different types, but the functions themselves are different.
+ 
+So im looking for IBankAccount
+ 
+this should have the common stuff an account does: 
+ 
+AddMoney
+WithdrawMoney
+GetBalance
+ 
+But the accounts that implement the interface would be 
+ 
+Current
+Savings
+Mortgage
+ 
+Each of the functions/mehods will do something slightly different on each one
+ 
+Current account:
+ 
+add money - adds to balance
+withdraw money - just takes money
+get balance - shows balance
+ 
+Savings account:
+
+add money - also adds interest
+Withdraw money - removes interest if account age is younger than 12 months
+get balance - shows balance but also the interest bonus of the balance as a percentage
+ 
+Mortgage:
+ - Add money takes from remaning balance and adds to amount paid
+ Withdraw money - shows a message saying it is not that type of account
+get balance shows outstanding and paid balances
+ 
+ 
+to display this info we should be looping through an array of IBankAccount 
+ 
+Bonus info for  next stage: We will be making a menu to access this information, the bank accounts will potentially need an identifier to search on, what could be included that is unique? 
