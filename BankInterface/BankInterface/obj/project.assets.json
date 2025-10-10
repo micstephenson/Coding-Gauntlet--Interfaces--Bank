@@ -8,7 +8,7 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Michaylias$la\\.nuget\\packages\\": {},
+    "C:\\Users\\michaylia.stephenson\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
@@ -17,14 +17,14 @@
       "projectUniqueName": "C:\\Users\\michaylia.stephenson\\OneDrive - Zenith OpCo Limited\\Documents\\Progamming C#\\Home\\GitHub\\Coding-Gauntlet--Interfaces--Bank-\\BankInterface\\BankInterface\\BankInterface.csproj",
       "projectName": "BankInterface",
       "projectPath": "C:\\Users\\michaylia.stephenson\\OneDrive - Zenith OpCo Limited\\Documents\\Progamming C#\\Home\\GitHub\\Coding-Gauntlet--Interfaces--Bank-\\BankInterface\\BankInterface\\BankInterface.csproj",
-      "packagesPath": "C:\\Users\\Michaylias$la\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\michaylia.stephenson\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\michaylia.stephenson\\OneDrive - Zenith OpCo Limited\\Documents\\Progamming C#\\Home\\GitHub\\Coding-Gauntlet--Interfaces--Bank-\\BankInterface\\BankInterface\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Michaylias$la\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\michaylia.stephenson\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

@@ -5,6 +5,12 @@ namespace BankInterface.Accounts;
 internal class CurrentAccount : IBankAccount
 {
     private decimal balance;
+    private string CustomerId;
+
+    public CurrentAccount()
+    {
+        CustomerId = (new Random().Next(100000, 999999)).ToString();
+    }
     public void AddMoney(decimal amount)
     {
         if (amount <= 0)
@@ -28,5 +34,10 @@ internal class CurrentAccount : IBankAccount
     public decimal GetBalance()
     {
         return balance;
+    }
+
+    public string GetCustomerId()
+    {
+        return CustomerId;
     }
 }

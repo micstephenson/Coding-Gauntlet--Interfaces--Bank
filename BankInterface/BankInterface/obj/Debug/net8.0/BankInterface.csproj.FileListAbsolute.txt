@@ -1,0 +1,15 @@
+C:\Users\michaylia.stephenson\OneDrive - Zenith OpCo Limited\Documents\Progamming C#\Home\GitHub\Coding-Gauntlet--Interfaces--Bank-\BankInterface\BankInterface\bin\Debug\net8.0\BankInterface.exe
+C:\Users\michaylia.stephenson\OneDrive - Zenith OpCo Limited\Documents\Progamming C#\Home\GitHub\Coding-Gauntlet--Interfaces--Bank-\BankInterface\BankInterface\bin\Debug\net8.0\BankInterface.deps.json
+C:\Users\michaylia.stephenson\OneDrive - Zenith OpCo Limited\Documents\Progamming C#\Home\GitHub\Coding-Gauntlet--Interfaces--Bank-\BankInterface\BankInterface\bin\Debug\net8.0\BankInterface.runtimeconfig.json
+C:\Users\michaylia.stephenson\OneDrive - Zenith OpCo Limited\Documents\Progamming C#\Home\GitHub\Coding-Gauntlet--Interfaces--Bank-\BankInterface\BankInterface\bin\Debug\net8.0\BankInterface.dll
+C:\Users\michaylia.stephenson\OneDrive - Zenith OpCo Limited\Documents\Progamming C#\Home\GitHub\Coding-Gauntlet--Interfaces--Bank-\BankInterface\BankInterface\bin\Debug\net8.0\BankInterface.pdb
+C:\Users\michaylia.stephenson\OneDrive - Zenith OpCo Limited\Documents\Progamming C#\Home\GitHub\Coding-Gauntlet--Interfaces--Bank-\BankInterface\BankInterface\obj\Debug\net8.0\BankInterface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\michaylia.stephenson\OneDrive - Zenith OpCo Limited\Documents\Progamming C#\Home\GitHub\Coding-Gauntlet--Interfaces--Bank-\BankInterface\BankInterface\obj\Debug\net8.0\BankInterface.AssemblyInfoInputs.cache
+C:\Users\michaylia.stephenson\OneDrive - Zenith OpCo Limited\Documents\Progamming C#\Home\GitHub\Coding-Gauntlet--Interfaces--Bank-\BankInterface\BankInterface\obj\Debug\net8.0\BankInterface.AssemblyInfo.cs
+C:\Users\michaylia.stephenson\OneDrive - Zenith OpCo Limited\Documents\Progamming C#\Home\GitHub\Coding-Gauntlet--Interfaces--Bank-\BankInterface\BankInterface\obj\Debug\net8.0\BankInterface.csproj.CoreCompileInputs.cache
+C:\Users\michaylia.stephenson\OneDrive - Zenith OpCo Limited\Documents\Progamming C#\Home\GitHub\Coding-Gauntlet--Interfaces--Bank-\BankInterface\BankInterface\obj\Debug\net8.0\BankInterface.sourcelink.json
+C:\Users\michaylia.stephenson\OneDrive - Zenith OpCo Limited\Documents\Progamming C#\Home\GitHub\Coding-Gauntlet--Interfaces--Bank-\BankInterface\BankInterface\obj\Debug\net8.0\BankInterface.dll
+C:\Users\michaylia.stephenson\OneDrive - Zenith OpCo Limited\Documents\Progamming C#\Home\GitHub\Coding-Gauntlet--Interfaces--Bank-\BankInterface\BankInterface\obj\Debug\net8.0\refint\BankInterface.dll
+C:\Users\michaylia.stephenson\OneDrive - Zenith OpCo Limited\Documents\Progamming C#\Home\GitHub\Coding-Gauntlet--Interfaces--Bank-\BankInterface\BankInterface\obj\Debug\net8.0\BankInterface.pdb
+C:\Users\michaylia.stephenson\OneDrive - Zenith OpCo Limited\Documents\Progamming C#\Home\GitHub\Coding-Gauntlet--Interfaces--Bank-\BankInterface\BankInterface\obj\Debug\net8.0\BankInterface.genruntimeconfig.cache
+C:\Users\michaylia.stephenson\OneDrive - Zenith OpCo Limited\Documents\Progamming C#\Home\GitHub\Coding-Gauntlet--Interfaces--Bank-\BankInterface\BankInterface\obj\Debug\net8.0\ref\BankInterface.dll
