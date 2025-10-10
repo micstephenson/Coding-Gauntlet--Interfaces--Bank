@@ -10,10 +10,12 @@ class Program
         var Currentaccount2 = new CurrentAccount();
         var Savingsaccount1 = new SavingsAccount();
         var Savingsaccount2 = new SavingsAccount();
+        var Mortgageaccount1 = new MortgageAccount();
         accounts.Add(Currentaccount1);
         accounts.Add(Currentaccount2);
         accounts.Add(Savingsaccount1);
         accounts.Add(Savingsaccount2);
+        //accounts.Add(Mortgageaccount1);
 
         foreach (var account in accounts)
         {
