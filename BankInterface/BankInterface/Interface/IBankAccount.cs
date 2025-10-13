@@ -6,4 +6,5 @@ public interface IBankAccount
     void WithdrawMoney(decimal amount);
     decimal GetBalance();
     string GetCustomerId();
+    public double GetAccountAge(DateTime AccountAge);
 }
