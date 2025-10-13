@@ -11,6 +11,7 @@ internal class CurrentAccount : IBankAccount
     {
         CustomerId = (new Random().Next(100000, 999999)).ToString();
     }
+
     public void AddMoney(decimal amount)
     {
         if (amount <= 0)
@@ -19,6 +20,7 @@ internal class CurrentAccount : IBankAccount
         }
         balance += amount;
     }
+
     public void WithdrawMoney(decimal amount)
     {
         if (amount <= 0)
@@ -31,6 +33,7 @@ internal class CurrentAccount : IBankAccount
         }
         balance -= amount;
     }
+
     public decimal GetBalance()
     {
         return balance;

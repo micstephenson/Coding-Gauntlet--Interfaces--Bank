@@ -17,6 +17,9 @@ class Program
         accounts.Add(Savingsaccount2);
         //accounts.Add(Mortgageaccount1);
 
+        var (outstanding, paid) = Mortgageaccount1.GetBalances();
+        //Console.WriteLine($"Mortgage Account \nOutstanding balance: {outstanding}, Balance Paid: {paid}");
+
         foreach (var account in accounts)
         {
             decimal amount = new Random().Next(100, 1000);
