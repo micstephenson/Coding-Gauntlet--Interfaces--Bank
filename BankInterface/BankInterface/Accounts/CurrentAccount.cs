@@ -28,7 +28,7 @@ internal class CurrentAccount : IBankAccount
     {
         if (amount <= 0)
         {
-            throw new ArgumentException("Amount must be positive.");
+            Console.WriteLine("Amount must be positive."); 
         }
         balance += amount;
     }
@@ -37,13 +37,16 @@ internal class CurrentAccount : IBankAccount
     {
         if (amount <= 0)
         {
-            throw new ArgumentException("Amount must be positive.");
+            Console.WriteLine("Amount must be positive."); 
         }
         if (amount > balance)
         {
-            throw new InvalidOperationException("Insufficient funds.");
+            Console.WriteLine("Insufficient funds."); 
         }
-        balance -= amount;
+        else
+        {
+            balance -= amount;
+        }
     }
 
     public decimal GetBalance()

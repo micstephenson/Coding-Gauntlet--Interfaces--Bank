@@ -45,7 +45,7 @@ internal class MortgageAccount : IBankAccount
 
     public void WithdrawMoney(decimal amount)
     {
-        throw new NotImplementedException("Withdrawls can't be made on mortgage accounts");
+        Console.WriteLine("Withdrawls can't be made on mortgage accounts");
     }
 
     public string GetCustomerId()

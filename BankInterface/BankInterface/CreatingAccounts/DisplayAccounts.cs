@@ -17,18 +17,31 @@ internal class DisplayAccounts
         {
             decimal amount = new Random().Next(100, 1000);
             account.AddMoney(amount);
-            Console.WriteLine($"Account: {account.GetCustomerId()}");
+            //Console.WriteLine($"Account: {account.GetCustomerId()}");
 
-            if (account.GetType().Name == "MortgageAccount")
+            if (account.GetType().Name == "CurrentAccount")
             {
-                Console.WriteLine($"Mortgage Account Balance: {account.GetBalance()}\n");
+                Console.WriteLine($"Current Account: {account.GetCustomerId()}\n");
             }
-            else
+            else if (account.GetType().Name == "SavingsAccount")
             {
-                Console.WriteLine($"Account Balance: {account.GetBalance()}");
-                account.WithdrawMoney(100);
-                Console.WriteLine($"Account Balance after withdrawl: {account.GetBalance()}\n");
+                Console.WriteLine($"Savings Account: {account.GetCustomerId()}\n");
             }
+            else if (account.GetType().Name == "MortgageAccount")
+            {
+                Console.WriteLine($"Mortgage Account: {account.GetCustomerId()}\n");
+            }
+
+            //if (account.GetType().Name == "MortgageAccount")
+            //{
+            //    Console.WriteLine($"Mortgage Account Balance: {account.GetBalance()}\n");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Account Balance: {account.GetBalance()}");
+            //    account.WithdrawMoney(100);
+            //    Console.WriteLine($"Account Balance after withdrawl: {account.GetBalance()}\n");
+            //}
         }
     }
 }

@@ -30,7 +30,7 @@ internal class SavingsAccount : IBankAccount
     {
         if (amount <= 0)
         {
-            throw new ArgumentException("Amount must be positive.");
+            Console.WriteLine("Amount must be positive.");
         }
         balance += amount;
     }
@@ -39,11 +39,11 @@ internal class SavingsAccount : IBankAccount
     {
         if (amount <= 0)
         {
-            throw new ArgumentException("Amount must be positive.");
+            Console.WriteLine("Amount must be positive.");
         }
         if (amount > balance)
         {
-            throw new InvalidOperationException("Insufficient funds.");
+            Console.WriteLine("Insufficient funds.");
         }
         if (GetAccountAge(AccountAge) < 12)
         {
@@ -51,7 +51,11 @@ internal class SavingsAccount : IBankAccount
             Math.Round(balance, 2);
             Console.WriteLine($"Interest removed as Account Age is {GetAccountAge(AccountAge)} months old");
         }
-        balance -= amount;
+        else
+        {
+            balance -= amount;
+        }
+            ;
     }
 
     public decimal GetBalance()
