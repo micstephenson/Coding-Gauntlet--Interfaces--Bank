@@ -61,6 +61,7 @@ This task will involve loops and will get you thinking about how an end user int
  
 For the menu options, Switch statements may also be needed.
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Commented out code
 RANDOMDATE
     //public static DateTime RandomDate()
