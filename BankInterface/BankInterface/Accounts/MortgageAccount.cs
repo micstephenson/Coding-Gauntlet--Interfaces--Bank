@@ -4,28 +4,25 @@ namespace BankInterface.Accounts;
 
 internal class MortgageAccount : IBankAccount
 {
-    private decimal remainingBalance;
-    private decimal amountPaid;
+    private decimal remainingBalance = 12563;
+    private decimal amountPaid = 938;
     private string CustomerId;
-    private DateTime AccountAge = RandomDate();
+    private DateTime AccountAge;
 
-    public MortgageAccount()
+    public MortgageAccount(string Id, DateTime Age)
     {
-        CustomerId = (new Random().Next(100000, 999999)).ToString();
-    }
-
-    public static DateTime RandomDate()
-    {
-        DateTime start = new DateTime(1920, 1, 1);
-        int range = (DateTime.Today - start).Days;
-        return start.AddDays(new Random().Next(range));
+        CustomerId = Id;
+        AccountAge = Age;
     }
 
     public double GetAccountAge(DateTime AccountAge)
     {
-        var AccountCreationYear = (DateTime.Today - AccountAge).TotalDays;
-        double CurrentYear = DateTime.Today.Year;
-        return CurrentYear - AccountCreationYear;
+        double months = (DateTime.Today.Year - AccountAge.Year) * 12 + DateTime.Today.Month - AccountAge.Month;
+        if (DateTime.Today.Day < AccountAge.Day)
+        {
+            months -= 1;
+        }
+        return months;
     }
 
     public void AddMoney(decimal amount)
@@ -36,12 +33,13 @@ internal class MortgageAccount : IBankAccount
 
     public decimal GetBalance()
     {
-        throw new NotImplementedException();
+        GetBalances();
+        return remainingBalance;
     }
 
     public (decimal PaidBalance, decimal OutstandingBalance) GetBalances()
     {
-        Console.WriteLine($"Mortgage Account \n ------------------------ \nOutstanding: {remainingBalance} \n Paid Balance: {amountPaid}\n");
+        Console.WriteLine($"Mortgage Account \n------------------------ \nOutstanding: {remainingBalance}\nPaid Balance: {amountPaid}\n");
         return (remainingBalance, amountPaid);
     }
 

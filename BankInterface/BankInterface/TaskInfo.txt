@@ -38,3 +38,48 @@ get balance shows outstanding and paid balances
 to display this info we should be looping through an array of IBankAccount 
  
 Bonus info for  next stage: We will be making a menu to access this information, the bank accounts will potentially need an identifier to search on, what could be included that is unique? 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Next task: Add a menu UI for user interaction
+ 
+Rather than a Random Customer Number, allows these to be static and controlled by using input parameters. E.g. new CurrentAccount(1267);
+ 
+The next task is for you to create a menu which the end user can interact with.
+ 
+When the console app starts, provide an option menu for the end user.
+This could be a series of numbers, like a phone menu, that map to certain action. Press 1 to create an account, press 2 to see your balance, etc.
+ 
+An end user should be able to:
+- select an existing account using Customer Number. Then a list of accounts will be associated with the customer number. 
+- read their balance
+- make a payment
+- make a withdrawal
+- exit the console once they've finished.
+ 
+This task will involve loops and will get you thinking about how an end user interacts with your application. Research on how to do a simple console application. Hint, this may include Do While loops. Look up how to read user input from a console.
+ 
+For the menu options, Switch statements may also be needed.
+
+Commented out code
+RANDOMDATE
+    //public static DateTime RandomDate()
+    //{
+    //    DateTime start = new DateTime(2020, 1, 1);
+    //    int range = (DateTime.Today - start).Days;
+    //    return start.AddDays(new Random().Next(range));
+    //}
+
+    // var (outstanding, paid) = Mortgageaccount1.GetBalances();
+        // Console.WriteLine($"Mortgage Account \nOutstanding balance: {outstanding}, Balance Paid: {paid}");
+
+    if (account.GetType().Name == "MortgageAccount")
+            {
+                Console.WriteLine($"Mortgage Account Balance: {account.GetBalance()}\n");
+            }
+            else
+            {
+                Console.WriteLine($"Account Balance: {account.GetBalance()}");
+                account.WithdrawMoney(100);
+                Console.WriteLine($"Account Balance after withdrawl: {account.GetBalance()}\n");
+            }

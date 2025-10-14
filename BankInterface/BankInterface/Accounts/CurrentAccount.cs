@@ -6,25 +6,22 @@ internal class CurrentAccount : IBankAccount
 {
     private decimal balance;
     private string CustomerId;
-    private DateTime AccountAge = RandomDate();
+    private DateTime AccountAge;
 
-    public CurrentAccount()
+    public CurrentAccount(string Id, DateTime Age)
     {
-        CustomerId = (new Random().Next(100000, 999999)).ToString();
-    }
-
-    public static DateTime RandomDate()
-    {
-        DateTime start = new DateTime(1920, 1, 1);
-        int range = (DateTime.Today - start).Days;
-        return start.AddDays(new Random().Next(range));
+        CustomerId = Id;
+        AccountAge = Age;
     }
 
     public double GetAccountAge(DateTime AccountAge)
     {
-        var AccountCreationYear = (DateTime.Today - AccountAge).TotalDays;
-        double CurrentYear = DateTime.Today.Year;
-        return CurrentYear - AccountCreationYear;
+        double months = (DateTime.Today.Year - AccountAge.Year) * 12 + DateTime.Today.Month - AccountAge.Month;
+        if (DateTime.Today.Day < AccountAge.Day)
+        {
+            months -= 1;
+        }
+        return months;
     }
 
     public void AddMoney(decimal amount)

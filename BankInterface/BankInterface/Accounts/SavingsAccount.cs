@@ -7,26 +7,23 @@ internal class SavingsAccount : IBankAccount
     private decimal balance;
     private const decimal interestRate = 0.03m;
     private string CustomerId;
-    private DateTime AccountAge = RandomDate();
+    private DateTime AccountAge;
     
 
-    public SavingsAccount()
+    public SavingsAccount(string Id, DateTime Age)
     {
-        CustomerId = new Random().Next(100000, 999999).ToString();
-    }
-
-    public static DateTime RandomDate()
-    {
-        DateTime start = new DateTime(2010, 1, 1);
-        int range = (DateTime.Today - start).Days;
-        return start.AddDays(new Random().Next(range));
+        CustomerId = Id;
+        AccountAge = Age;
     }
 
     public double GetAccountAge(DateTime AccountAge)
     {
-        double years = (DateTime.Today - AccountAge).TotalDays / 365.25;
-        years = years == 0 ? 0 : Math.Round(years, 0 - (int)Math.Floor(Math.Log10(Math.Abs(years))));
-        return years;
+        double months = (DateTime.Today.Year - AccountAge.Year) * 12 + DateTime.Today.Month - AccountAge.Month;
+        if (DateTime.Today.Day < AccountAge.Day)
+        {
+            months -= 1;
+        }
+        return months;
     }
 
     public void AddMoney(decimal amount)
@@ -48,11 +45,11 @@ internal class SavingsAccount : IBankAccount
         {
             throw new InvalidOperationException("Insufficient funds.");
         }
-        if ((DateTime.Today - AccountAge).TotalDays / 365.25 < 12)
+        if (GetAccountAge(AccountAge) < 12)
         {
             balance -= Math.Round(amount * interestRate, 2);
             Math.Round(balance, 2);
-            Console.WriteLine($"Interest removed as Account Age is {GetAccountAge(AccountAge)}");
+            Console.WriteLine($"Interest removed as Account Age is {GetAccountAge(AccountAge)} months old");
         }
         balance -= amount;
     }
