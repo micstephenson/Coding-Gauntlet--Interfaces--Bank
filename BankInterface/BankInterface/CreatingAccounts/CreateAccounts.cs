@@ -22,16 +22,22 @@ internal class CreateAccounts
         List<IBankAccount> accounts = new List<IBankAccount>();
 
         Currentaccount1 = new CurrentAccount("111", DateOne);
-        Currentaccount2 = new CurrentAccount("9371836", DateTwo);
-        Savingsaccount1 = new SavingsAccount("9187324", DateThree);
-        Savingsaccount2 = new SavingsAccount("1273834", DateFour);
-        Mortgageaccount1 = new MortgageAccount("4282312", DateFive);
+        Currentaccount2 = new CurrentAccount("222", DateTwo);
+        Savingsaccount1 = new SavingsAccount("333", DateThree);
+        Savingsaccount2 = new SavingsAccount("444", DateFour);
+        Mortgageaccount1 = new MortgageAccount("555", DateFive);
 
         accounts.Add(Currentaccount1);
         accounts.Add(Currentaccount2);
         accounts.Add(Savingsaccount1);
         accounts.Add(Savingsaccount2);
         accounts.Add(Mortgageaccount1);
+
+        foreach (var account in accounts)
+        {
+            decimal amount = new Random().Next(100, 5000);
+            account.AddMoney(amount);
+        }
 
         return accounts;
     }

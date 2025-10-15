@@ -100,9 +100,12 @@ class Program
                             Console.WriteLine("[1] Read Balance");
                             Console.WriteLine("[2] Deposit");
                             Console.WriteLine("[3] Withdraw");
-                            Console.WriteLine("[4] Exit \n");
+                            Console.WriteLine("[4] Exit");
+                            Console.Write("Your Choice: ");
 
                             string? inputStr2 = Console.ReadLine();
+                            Console.WriteLine("");
+                            decimal OriginalBalance = selectedAccount.GetBalance();
                             if (!int.TryParse(inputStr2, out int input2))
                             {
                                 Console.WriteLine("Invalid input. Please enter a number.");
@@ -122,11 +125,12 @@ class Program
 
                                 case 2:
                                     Console.Write("How much would you like to deposit?\nDeposit: £");
+                                    
                                     string? deposit = Console.ReadLine();
                                     if (decimal.TryParse(deposit, out decimal depositAmount))
                                     {
                                         selectedAccount.AddMoney(depositAmount);
-                                        Console.WriteLine($"Deposited amount: {depositAmount}\nNew Balance: {selectedAccount.GetBalance()}\n");
+                                        Console.WriteLine($"Deposited amount: {depositAmount}\nOld Balance: {OriginalBalance}\nNew Balance: {selectedAccount.GetBalance()}\n");
                                     }
                                     else
                                     {
@@ -143,7 +147,7 @@ class Program
                                     if (decimal.TryParse(withdraw, out decimal withdrawAmount))
                                     {
                                         selectedAccount.WithdrawMoney(withdrawAmount);
-                                        Console.WriteLine($"Withdrawn amount: {withdrawAmount}\nNew Balance: {selectedAccount.GetBalance()}\n");                                        
+                                        Console.WriteLine($"Withdrawn amount: {withdrawAmount}\nOld Balance: {OriginalBalance}\nNew Balance: {selectedAccount.GetBalance()}\n");                                        
                                     }
                                     else
                                     {
@@ -171,7 +175,7 @@ class Program
                     }
                 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                 case 4:                    
-                    Console.WriteLine("goodbye");
+                    Console.WriteLine("\n*Goodbye*");
                     Console.WriteLine("Press any key to continue...");
                     Console.ReadKey();
                     Environment.Exit(0);
