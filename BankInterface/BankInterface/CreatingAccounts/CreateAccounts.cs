@@ -1,10 +1,13 @@
 ﻿using BankInterface.Accounts;
 using BankInterface.Interface;
+using System.Security.Principal;
 
 namespace BankInterface.CreatingAccounts;
 
 internal class CreateAccounts
 {
+    List<IBankAccount> accounts = new List<IBankAccount>();
+
     DateTime DateOne = new DateTime(2021, 10, 23);
     DateTime DateTwo = new DateTime(2025, 03, 12);
     DateTime DateThree = new DateTime(2015, 07, 07);
@@ -19,8 +22,6 @@ internal class CreateAccounts
 
     public List<IBankAccount> CreateAccount() //rename
     {
-        List<IBankAccount> accounts = new List<IBankAccount>();
-
         Currentaccount1 = new CurrentAccount("111", DateOne);
         Currentaccount2 = new CurrentAccount("222", DateTwo);
         Savingsaccount1 = new SavingsAccount("333", DateThree);
@@ -40,6 +41,53 @@ internal class CreateAccounts
         }
 
         return accounts;
+    }
+
+    public void UserCreatedAccount(string AccountType, string CustomerId, DateTime AccountCreation)
+    {
+        if (AccountType == "CurrentAccount")
+        {
+            foreach (var account in accounts)
+            {
+                if ((CustomerId == account.GetCustomerId()) && (account.GetType().Name == "CurrentAccount"))
+                {
+                    Console.WriteLine("You already have a Current Account");
+                }
+                else
+                {
+                    accounts.Add(new CurrentAccount(CustomerId, AccountCreation));
+                }
+            }
+            
+        }
+        else if (AccountType == "SavingsAccount")
+        {
+            foreach (var account in accounts)
+            {
+                if ((CustomerId == account.GetCustomerId()) && (account.GetType().Name == "SavingsAccount"))
+                {
+                    Console.WriteLine("You already have a Savings Account");
+                }
+                else
+                {
+                    accounts.Add(new SavingsAccount(CustomerId, AccountCreation));
+                }
+            }
+        }
+        else if (AccountType == "MortgageAccount")
+        {
+            foreach (var account in accounts)
+            {
+                if ((CustomerId == account.GetCustomerId()) && (account.GetType().Name == "MortgageAccount"))
+                {
+                    Console.WriteLine("You already have a Mortgage Account");
+                }
+                else
+                {
+                    accounts.Add(new MortgageAccount(CustomerId, AccountCreation));
+                }
+            }
+        }
     }
 
 }

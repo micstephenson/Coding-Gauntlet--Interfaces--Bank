@@ -1,4 +1,5 @@
-﻿using BankInterface.CreatingAccounts;
+﻿using BankInterface.Accounts;
+using BankInterface.CreatingAccounts;
 using BankInterface.Interface;
 
 class Program
@@ -20,12 +21,14 @@ class Program
             if (showCreateAccounts)
                 Console.WriteLine("[1] Create Accounts");
             else
-                Console.WriteLine("[2] Show Accounts");
-            Console.WriteLine("[3] Select An Existing Account");
-            Console.WriteLine("[4] Exit");
+                Console.WriteLine("[2] Create A New Account");
+                Console.WriteLine("[3] Show Accounts");
+            Console.WriteLine("[4] Select An Existing Account");
+            Console.WriteLine("[5] Exit");
             Console.Write("Your Choice: ");
 
             string? inputStr = Console.ReadLine();
+            Console.WriteLine();
             if (!int.TryParse(inputStr, out int input))
             {
                 Console.WriteLine("Invalid input. Please enter a number.");
@@ -63,8 +66,47 @@ class Program
                         Console.Clear();
                     }
                     break;
-
                 case 2:
+                    Console.WriteLine("*Create New Account*");
+                    Console.WriteLine("[1]Current Account\n[2]Savings Account\n[3]Mortgage Account");
+
+                    string? AccountType = Console.ReadLine();
+                    if (!int.TryParse(AccountType, out int UserAccountType))
+                    {
+                        Console.WriteLine("Invalid input. Please enter a number.");
+                        Thread.Sleep(1000);
+                        Console.Clear();
+                        continue;
+                    }
+
+                    Console.Write("Customer Id: ");
+                    string CustomerId = Console.ReadLine();
+                    Console.Write("Account Creation Date (yyyy-mm-dd): ");
+                    string? AccountCreation = Console.ReadLine();
+                    if (!DateTime.TryParse(AccountCreation, out DateTime accountCreationDate))
+                    {
+                        Console.WriteLine("Invalid date format. Please enter a valid date (e.g., 2024-06-10).");
+                        // Handle error or ask again
+                    }
+                    else
+                    {
+                    // ------------------------------------------------------------------------------------------------------------------------------------------------
+                        switch (UserAccountType)
+                        {
+                            case 1:
+                                accountsCreator.UserCreatedAccount("CurrentAccount", CustomerId, accountCreationDate);
+                                break;
+                            case 2:
+                                accountsCreator.UserCreatedAccount("SavingsAccount", CustomerId, accountCreationDate);
+                                break;
+                            case 3:
+                                accountsCreator.UserCreatedAccount("MortgageAccount", CustomerId, accountCreationDate);
+                                break;
+                        }
+                    }
+                    break;                                    
+
+                case 3:
                     var displayAccounts = new DisplayAccounts(accounts);
                     Console.WriteLine("\n        ACCOUNTS:");
                     displayAccounts.ShowAccounts();
@@ -73,7 +115,7 @@ class Program
                     Console.Clear();
                     break;
 
-                case 3:
+                case 4:
                     Console.WriteLine("Enter Customer ID:");
                     string? ChosenAccountId = Console.ReadLine();
                     Console.Clear();
@@ -174,11 +216,11 @@ class Program
                         break;
                     }
                 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                case 4:                    
+                case 5:                    
                     Console.WriteLine("\n*Goodbye*");
                     Console.WriteLine("Press any key to continue...");
                     Console.ReadKey();
-                    Environment.Exit(0);
+                    Environment.Exit(1);
                     break;
 
                 default:                                 
