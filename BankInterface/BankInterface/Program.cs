@@ -12,6 +12,7 @@ class Program
 
         while (true)
         {
+            var accountChecker = new CheckAccounts(accounts);
             Console.Title = "Bank Menu";
             Console.WriteLine("Welcome To The Bank Menu");
             Console.WriteLine("-------------------------");
@@ -127,18 +128,19 @@ class Program
                     string? ChosenAccountId = Console.ReadLine();
                     Console.Clear();
 
-                    IBankAccount? selectedAccount = accounts.FirstOrDefault(account => account.GetCustomerId() == ChosenAccountId);
+                    IBankAccount? selectedAccount = accountChecker.CheckUserIdAccounts(ChosenAccountId);
 
                     if (selectedAccount == null)
                     {
                         Console.WriteLine("No account found with that Customer ID.");
                         Thread.Sleep(1500);
                         Console.Clear();
-                        break;
+                        break;                        
                     }
+                    
                     else
                     {
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                        // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                         while (true)
                         {
                             Console.Title = "User Menu";
@@ -174,7 +176,7 @@ class Program
 
                                 case 2:
                                     Console.Write("How much would you like to deposit?\nDeposit: £");
-                                    
+
                                     string? deposit = Console.ReadLine();
                                     if (decimal.TryParse(deposit, out decimal depositAmount))
                                     {
@@ -196,7 +198,7 @@ class Program
                                     if (decimal.TryParse(withdraw, out decimal withdrawAmount))
                                     {
                                         selectedAccount.WithdrawMoney(withdrawAmount);
-                                        Console.WriteLine($"Withdrawn amount: {withdrawAmount}\nOld Balance: {OriginalBalance}\nNew Balance: {selectedAccount.GetBalance()}\n");                                        
+                                        Console.WriteLine($"Withdrawn amount: {withdrawAmount}\nOld Balance: {OriginalBalance}\nNew Balance: {selectedAccount.GetBalance()}\n");
                                     }
                                     else
                                     {
@@ -219,7 +221,7 @@ class Program
                                     break;
                             }
                         }
-                        EndUserMenu:
+                    EndUserMenu:
                         break;
                     }
                 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------

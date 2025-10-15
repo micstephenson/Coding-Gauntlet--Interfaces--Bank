@@ -52,15 +52,14 @@ internal class CreateAccounts
                 if ((CustomerId == account.GetCustomerId()) && (account.GetType().Name == "CurrentAccount"))
                 {
                     Console.WriteLine("You already have a Current Account");
+                    ReturnToMainMenu();
+                    break;
                 }
                 else
                 {
                     accounts.Add(new CurrentAccount(CustomerId, AccountCreation));
                     Console.WriteLine("\n*Account Created*");
-                    Thread.Sleep(1000);
-                    Console.WriteLine("*Returning To Main Menu*");
-                    Thread.Sleep(1500);
-                    Console.Clear();
+                    ReturnToMainMenu();
                     break;
                 }
             }
@@ -73,15 +72,14 @@ internal class CreateAccounts
                 if ((CustomerId == account.GetCustomerId()) && (account.GetType().Name == "SavingsAccount"))
                 {
                     Console.WriteLine("You already have a Savings Account");
+                    ReturnToMainMenu();
+                    break;
                 }
                 else
                 {
                     accounts.Add(new SavingsAccount(CustomerId, AccountCreation));
                     Console.WriteLine("\n*Account Created*");
-                    Thread.Sleep(1000);
-                    Console.WriteLine("*Returning To Main Menu*");
-                    Thread.Sleep(1500);
-                    Console.Clear();
+                    ReturnToMainMenu();
                     break;
                 }
             }
@@ -93,19 +91,25 @@ internal class CreateAccounts
                 if ((CustomerId == account.GetCustomerId()) && (account.GetType().Name == "MortgageAccount"))
                 {
                     Console.WriteLine("You already have a Mortgage Account");
+                    ReturnToMainMenu();
+                    break;
                 }
                 else
                 {
                     accounts.Add(new MortgageAccount(CustomerId, AccountCreation));
                     Console.WriteLine("\n*Account Created*");
-                    Thread.Sleep(1000);
-                    Console.WriteLine("*Returning To Main Menu*");
-                    Thread.Sleep(1500);
-                    Console.Clear();
+                    ReturnToMainMenu();
                     break;
                 }
             }
         }
+    }
+    public void ReturnToMainMenu()
+    {
+        Thread.Sleep(1000);
+        Console.WriteLine("*Returning To Main Menu*");
+        Thread.Sleep(1500);
+        Console.Clear();
     }
 
 }
