@@ -29,6 +29,7 @@ internal class CheckAccounts
             {
                 Console.WriteLine($"[{i + 1}] {accountTypes[i]}");
             }
+            Console.WriteLine("");
             var input = Console.ReadLine();
             if (int.TryParse(input, out int chosenIndex) && chosenIndex >= 1 && chosenIndex <= accountTypes.Count)
             {

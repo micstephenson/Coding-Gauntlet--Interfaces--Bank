@@ -8,6 +8,7 @@ class Program
     {
         var accountsCreator = new CreateAccounts();
         List<IBankAccount> accounts = [];
+        accounts = accountsCreator.CreateAccount();
         bool showCreateAccounts = true;
 
         while (true)
@@ -16,16 +17,11 @@ class Program
             Console.Title = "Bank Menu";
             Console.WriteLine("Welcome To The Bank Menu");
             Console.WriteLine("-------------------------");
-            Console.WriteLine("What would you like to access?");
-            Console.WriteLine("");
-
-            if (showCreateAccounts)
-                Console.WriteLine("[1] Create Accounts");
-            else
-                Console.WriteLine("[2] Create A New Account");
-                Console.WriteLine("[3] Show Accounts");
-            Console.WriteLine("[4] Select An Existing Account");
-            Console.WriteLine("[5] Exit");
+            Console.WriteLine("What would you like to access?\n");
+            Console.WriteLine("[1] Create A New Account");
+            Console.WriteLine("[2] Show Accounts");
+            Console.WriteLine("[3] Select An Existing Account");
+            Console.WriteLine("[4] Exit");
             Console.Write("\nYour Choice: ");
 
             string? inputStr = Console.ReadLine();
@@ -46,24 +42,8 @@ class Program
             }
 
             switch (input)
-            {
+            {                
                 case 1:
-                    if (showCreateAccounts)
-                    {
-                        accounts = accountsCreator.CreateAccount();
-                        Console.WriteLine("*Accounts Created*");
-                        Thread.Sleep(1000);
-                        Console.WriteLine("*Returning To Main Menu*");
-                        DelayedClearPage();
-                        showCreateAccounts = false;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Invalid option. Try again.");
-                        DelayedClearPage();
-                    }
-                    break;
-                case 2:
                     Console.Clear();
                     Console.WriteLine("*Create New Account*");
                     Console.WriteLine("What Type of Account would you like to Create?\n");
@@ -108,7 +88,7 @@ class Program
                     
                     break;                                    
 
-                case 3:
+                case 2:
                     var displayAccounts = new DisplayAccounts(accounts);
                     Console.WriteLine("\n                        ACCOUNTS:\n");
                     displayAccounts.ShowAccounts();
@@ -117,7 +97,7 @@ class Program
                     Console.Clear();
                     break;
 
-                case 4:
+                case 3:
                     Console.WriteLine("Enter Customer ID:");
                     string? ChosenAccountId = Console.ReadLine();
                     Console.Clear();
@@ -127,8 +107,7 @@ class Program
                     if (selectedAccount == null)
                     {
                         Console.WriteLine("No account found with that Customer ID.");
-                        Thread.Sleep(1500);
-                        Console.Clear();
+                        DelayedClearPage();
                         break;                        
                     }
                     
@@ -140,8 +119,7 @@ class Program
                             Console.Title = "User Menu";
                             Console.WriteLine($"Account {selectedAccount.GetCustomerId()}");
                             Console.WriteLine($"---------------------------------------------");
-                            Console.WriteLine("What would you like to do?");
-                            Console.WriteLine("");
+                            Console.WriteLine("What would you like to do?\n");
                             Console.WriteLine("[1] Read Balance");
                             Console.WriteLine("[2] Deposit");
                             Console.WriteLine("[3] Withdraw");
@@ -217,7 +195,7 @@ class Program
                         break;
                     }
                 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                case 5:                    
+                case 4:                    
                     Console.WriteLine("\n*Goodbye*");
                     Console.WriteLine("Press any key to continue...");
                     Console.ReadKey();
