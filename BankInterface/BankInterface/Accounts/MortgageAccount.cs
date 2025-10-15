@@ -39,7 +39,7 @@ internal class MortgageAccount : IBankAccount
 
     public (decimal PaidBalance, decimal OutstandingBalance) GetBalances()
     {
-        Console.WriteLine($"Mortgage Account \n------------------------ \nOutstanding: {remainingBalance}\nPaid Balance: {amountPaid}\n");
+        //Console.WriteLine($"Mortgage Account \n------------------------ \nOutstanding: {remainingBalance}\nPaid Balance: {amountPaid}\n");
         return (remainingBalance, amountPaid);
     }
 

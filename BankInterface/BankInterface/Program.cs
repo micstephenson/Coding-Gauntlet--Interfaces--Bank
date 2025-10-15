@@ -25,7 +25,7 @@ class Program
                 Console.WriteLine("[3] Show Accounts");
             Console.WriteLine("[4] Select An Existing Account");
             Console.WriteLine("[5] Exit");
-            Console.Write("Your Choice: ");
+            Console.Write("\nYour Choice: ");
 
             string? inputStr = Console.ReadLine();
             Console.WriteLine();
@@ -67,10 +67,14 @@ class Program
                     }
                     break;
                 case 2:
+                    Console.Clear();
                     Console.WriteLine("*Create New Account*");
-                    Console.WriteLine("[1]Current Account\n[2]Savings Account\n[3]Mortgage Account");
+                    Console.WriteLine("What Type of Account would you like to Create?\n");
+                    Console.WriteLine("[1] Current Account\n[2] Savings Account\n[3] Mortgage Account\n");
+                    Console.Write("Your Choice: ");
 
                     string? AccountType = Console.ReadLine();
+                    Console.WriteLine("");
                     if (!int.TryParse(AccountType, out int UserAccountType))
                     {
                         Console.WriteLine("Invalid input. Please enter a number.");
@@ -86,6 +90,8 @@ class Program
                     if (!DateTime.TryParse(AccountCreation, out DateTime accountCreationDate))
                     {
                         Console.WriteLine("Invalid date format. Please enter a valid date (e.g., 2024-06-10).");
+                        Thread.Sleep(1000);
+                        Console.Clear();
                         // Handle error or ask again
                     }
                     else
@@ -104,6 +110,7 @@ class Program
                                 break;
                         }
                     }
+                    
                     break;                                    
 
                 case 3:

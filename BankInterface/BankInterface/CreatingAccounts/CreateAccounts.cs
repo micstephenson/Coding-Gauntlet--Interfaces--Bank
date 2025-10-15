@@ -56,6 +56,12 @@ internal class CreateAccounts
                 else
                 {
                     accounts.Add(new CurrentAccount(CustomerId, AccountCreation));
+                    Console.WriteLine("\n*Account Created*");
+                    Thread.Sleep(1000);
+                    Console.WriteLine("*Returning To Main Menu*");
+                    Thread.Sleep(1500);
+                    Console.Clear();
+                    break;
                 }
             }
             
@@ -71,6 +77,12 @@ internal class CreateAccounts
                 else
                 {
                     accounts.Add(new SavingsAccount(CustomerId, AccountCreation));
+                    Console.WriteLine("\n*Account Created*");
+                    Thread.Sleep(1000);
+                    Console.WriteLine("*Returning To Main Menu*");
+                    Thread.Sleep(1500);
+                    Console.Clear();
+                    break;
                 }
             }
         }
@@ -85,6 +97,12 @@ internal class CreateAccounts
                 else
                 {
                     accounts.Add(new MortgageAccount(CustomerId, AccountCreation));
+                    Console.WriteLine("\n*Account Created*");
+                    Thread.Sleep(1000);
+                    Console.WriteLine("*Returning To Main Menu*");
+                    Thread.Sleep(1500);
+                    Console.Clear();
+                    break;
                 }
             }
         }

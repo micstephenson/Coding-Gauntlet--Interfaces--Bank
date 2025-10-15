@@ -47,7 +47,7 @@ internal class SavingsAccount : IBankAccount
         }
         if (GetAccountAge(AccountAge) < 12)
         {
-            balance -= Math.Round(amount - (amount * interestRate), 2);
+            balance -= Math.Round(amount + (amount * interestRate), 2);
             Console.WriteLine($"Interest removed as Account Age is {GetAccountAge(AccountAge)} months old");
         }
         else
