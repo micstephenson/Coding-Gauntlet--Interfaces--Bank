@@ -33,8 +33,7 @@ class Program
             if (!int.TryParse(inputStr, out int input))
             {
                 Console.WriteLine("Invalid input. Please enter a number.");
-                Thread.Sleep(1000);
-                Console.Clear();
+                DelayedClearPage();
                 continue;
             }
 
@@ -42,8 +41,7 @@ class Program
             if (!showCreateAccounts && input == 1)
             {
                 Console.WriteLine("Invalid option. Try again.");
-                Thread.Sleep(1000);
-                Console.Clear();
+                DelayedClearPage();
                 continue;
             }
 
@@ -56,15 +54,13 @@ class Program
                         Console.WriteLine("*Accounts Created*");
                         Thread.Sleep(1000);
                         Console.WriteLine("*Returning To Main Menu*");
-                        Thread.Sleep(1500);
-                        Console.Clear();
+                        DelayedClearPage();
                         showCreateAccounts = false;
                     }
                     else
                     {
                         Console.WriteLine("Invalid option. Try again.");
-                        Thread.Sleep(1000);
-                        Console.Clear();
+                        DelayedClearPage();
                     }
                     break;
                 case 2:
@@ -79,8 +75,7 @@ class Program
                     if (!int.TryParse(AccountType, out int UserAccountType))
                     {
                         Console.WriteLine("Invalid input. Please enter a number.");
-                        Thread.Sleep(1000);
-                        Console.Clear();
+                        DelayedClearPage();
                         continue;
                     }
 
@@ -91,8 +86,7 @@ class Program
                     if (!DateTime.TryParse(AccountCreation, out DateTime accountCreationDate))
                     {
                         Console.WriteLine("Invalid date format. Please enter a valid date (e.g., 2024-06-10).");
-                        Thread.Sleep(1000);
-                        Console.Clear();
+                        DelayedClearPage();
                         // Handle error or ask again
                     }
                     else
@@ -116,7 +110,7 @@ class Program
 
                 case 3:
                     var displayAccounts = new DisplayAccounts(accounts);
-                    Console.WriteLine("\n        ACCOUNTS:");
+                    Console.WriteLine("\n                        ACCOUNTS:\n");
                     displayAccounts.ShowAccounts();
                     Console.WriteLine("Press Enter to return to menu...");
                     Console.ReadLine();
@@ -160,8 +154,7 @@ class Program
                             if (!int.TryParse(inputStr2, out int input2))
                             {
                                 Console.WriteLine("Invalid input. Please enter a number.");
-                                Thread.Sleep(1000);
-                                Console.Clear();
+                                DelayedClearPage();
                                 continue;
                             }
                             // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -216,8 +209,7 @@ class Program
 
                                 default:
                                     Console.WriteLine("Invalid option. Try again.");
-                                    Thread.Sleep(1000);
-                                    Console.Clear();
+                                    DelayedClearPage();
                                     break;
                             }
                         }
@@ -234,10 +226,14 @@ class Program
 
                 default:                                 
                     Console.WriteLine("Invalid option. Try again.");
-                    Thread.Sleep(1000);
-                    Console.Clear();
+                    DelayedClearPage();
                     break;
             }
         }
+    }
+    public static void DelayedClearPage()
+    {
+        Thread.Sleep(1000);
+        Console.Clear();
     }
 }
