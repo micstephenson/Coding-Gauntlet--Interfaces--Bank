@@ -1,6 +1,6 @@
-﻿using BankInterface.AccountFunctions;
-using BankInterface.CreatingAccounts;
-using BankInterface.Interface;
+﻿using Service.Accounts;
+using Data.CreatingAccounts;
+using Service.Interface;
 
 class Program
 {
@@ -32,7 +32,7 @@ class Program
             }
 
             switch (input)
-            {                
+            {
                 case 1:
                     Console.Clear();
                     Console.WriteLine("*Create New Account*");
@@ -50,17 +50,17 @@ class Program
                     }
 
                     Console.Write("Customer Id: ");
-                    string? CustomerId = Console.ReadLine();
+                    string CustomerId = Console.ReadLine();
                     Console.Write("Account Creation Date (yyyy-mm-dd): ");
                     string? AccountCreation = Console.ReadLine();
                     if (!DateTime.TryParse(AccountCreation, out DateTime accountCreationDate))
-                    {                        
-                        Console.WriteLine("Invalid date format. Please enter a valid date (e.g., 2024-06-10).");                        
-                        DelayedClearPage();                        
+                    {
+                        Console.WriteLine("Invalid date format. Please enter a valid date (e.g., 2024-06-10).");
+                        DelayedClearPage();
                     }
                     else
                     {
-                    // ------------------------------------------------------------------------------------------------------------------------------------------------
+                        // ------------------------------------------------------------------------------------------------------------------------------------------------
                         switch (UserAccountType)
                         {
                             case 1:
@@ -74,8 +74,8 @@ class Program
                                 break;
                         }
                     }
-                    
-                    break;                                    
+
+                    break;
 
                 case 2:
                     var displayAccounts = new DisplayAccounts(accounts);
@@ -97,9 +97,9 @@ class Program
                     {
                         Console.WriteLine("No account found with that Customer ID.");
                         DelayedClearPage();
-                        break;                        
+                        break;
                     }
-                    
+
                     else
                     {
                         // ----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -184,14 +184,14 @@ class Program
                         break;
                     }
                 // --------------------------------------------------------------------------------------------------------------------------------------------------------------
-                case 4:                    
+                case 4:
                     Console.WriteLine("\n*Goodbye*");
                     Console.WriteLine("Press any key to continue...");
                     Console.ReadKey();
                     Environment.Exit(1);
                     break;
 
-                default:                                 
+                default:
                     Console.WriteLine("Invalid option. Try again.");
                     DelayedClearPage();
                     break;

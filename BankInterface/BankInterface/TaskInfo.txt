@@ -84,3 +84,15 @@ RANDOMDATE
                 account.WithdrawMoney(100);
                 Console.WriteLine($"Account Balance after withdrawl: {account.GetBalance()}\n");
             }
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+New task: Split down Solution into multiple projects
+ 
+Please create three new projects within your current solution using Visual Studio.
+ 
+We would like to see a Frontend project, for your Console Menu options.
+ 
+We'd then like to see Service project, to hold business logic.
+ 
+Finally, a Data project to manage the data interactions.
+ 
+Please move your current code into these three projects as you see fit. We'd like to see you explain why you moved things into certain places.

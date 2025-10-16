@@ -1,6 +1,6 @@
 ﻿using BankInterface.Interface;
 
-namespace BankInterface.Accounts;
+namespace BankInterface.AccountFunctions;
 
 internal class CheckAccounts
 {
