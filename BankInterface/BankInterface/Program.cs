@@ -22,6 +22,7 @@ class Program
             Console.WriteLine("[4] Exit");
             Console.Write("\nYour Choice: ");
 
+                        
             string? inputStr = Console.ReadLine();
             Console.WriteLine();
             if (!int.TryParse(inputStr, out int input))
