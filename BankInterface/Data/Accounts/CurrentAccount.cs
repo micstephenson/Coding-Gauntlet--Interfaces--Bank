@@ -2,7 +2,7 @@
 
 namespace BankInterface.Accounts;
 
-internal class CurrentAccount : IBankAccount
+public class CurrentAccount : IBankAccount
 {
     private decimal balance;
     private string CustomerId;

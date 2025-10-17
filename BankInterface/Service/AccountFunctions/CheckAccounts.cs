@@ -1,8 +1,8 @@
-﻿using BankInterface.Interface;
+﻿using BankInterface.Data.Interface;
 
-namespace BankInterface.AccountFunctions;
+namespace BankInterface.Service.AccountFunctions;
 
-internal class CheckAccounts
+public class CheckAccounts
 {
     private List<IBankAccount> accounts;
 

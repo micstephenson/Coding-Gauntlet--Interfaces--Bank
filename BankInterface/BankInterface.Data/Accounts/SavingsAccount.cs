@@ -1,14 +1,15 @@
-﻿using BankInterface.Interface;
-
+﻿using BankInterface.Data.Interface;
 namespace BankInterface.Accounts;
 
-internal class CurrentAccount : IBankAccount
+public class SavingsAccount : IBankAccount
 {
     private decimal balance;
+    private const decimal interestRate = 0.03m;
     private string CustomerId;
     private DateTime AccountAge;
+    
 
-    public CurrentAccount(string Id, DateTime Age)
+    public SavingsAccount(string Id, DateTime Age)
     {
         CustomerId = Id;
         AccountAge = Age;
@@ -28,7 +29,7 @@ internal class CurrentAccount : IBankAccount
     {
         if (amount <= 0)
         {
-            Console.WriteLine("Amount must be positive."); 
+            Console.WriteLine("Amount must be positive.");
         }
         balance += amount;
     }
@@ -37,25 +38,31 @@ internal class CurrentAccount : IBankAccount
     {
         if (amount <= 0)
         {
-            Console.WriteLine("Amount must be positive."); 
+            Console.WriteLine("Amount must be positive.");
         }
-        if (amount > balance)
+        else if (amount > balance)
         {
-            Console.WriteLine("Insufficient funds."); 
+            Console.WriteLine("Insufficient funds.");
+        }
+        else if (GetAccountAge(AccountAge) < 12)
+        {
+            balance -= Math.Round(amount + (amount * interestRate), 2);
+            Console.WriteLine($"Interest removed as Account Age is {GetAccountAge(AccountAge)} months old");
         }
         else
         {
             balance -= amount;
-        }
+        }            
     }
 
     public decimal GetBalance()
     {
-        return balance;
+        return Math.Round(balance + (balance * interestRate), 2);
     }
 
     public string GetCustomerId()
     {
         return CustomerId;
     }
+
 }

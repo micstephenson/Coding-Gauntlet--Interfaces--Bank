@@ -1,10 +1,10 @@
-﻿using Service.Accounts;
-using Data.CreatingAccounts;
-using Service.Interface;
+﻿using BankInterface.Data.Interface;
+using BankInterface.Service.AccountFunctions;
+using BankInterface.Service.CreatingAccounts;
 
-class Program
+public static class MenuOptions
 {
-    static void Main(string[] args)
+    public static void DisplayMenu()
     {
         var accountsCreator = new CreateAccounts();
         List<IBankAccount> accounts = accountsCreator.CreateAccount();

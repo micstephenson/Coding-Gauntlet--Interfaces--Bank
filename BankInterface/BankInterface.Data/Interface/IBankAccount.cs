@@ -1,4 +1,4 @@
-﻿namespace BankInterface.Interface;
+﻿namespace BankInterface.Data.Interface;
 
 public interface IBankAccount
 {

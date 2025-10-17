@@ -1,7 +1,7 @@
 ﻿using BankInterface.Interface;
 namespace BankInterface.Accounts;
 
-internal class SavingsAccount : IBankAccount
+public class SavingsAccount : IBankAccount
 {
     private decimal balance;
     private const decimal interestRate = 0.03m;

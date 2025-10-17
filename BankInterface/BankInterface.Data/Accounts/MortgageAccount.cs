@@ -1,8 +1,8 @@
-﻿using BankInterface.Interface;
+﻿using BankInterface.Data.Interface;
 
 namespace BankInterface.Accounts;
 
-internal class MortgageAccount : IBankAccount
+public class MortgageAccount : IBankAccount
 {
     private decimal remainingBalance = 12563;
     private decimal amountPaid = 938;

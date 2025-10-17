@@ -1,9 +1,9 @@
-﻿using BankInterface.Interface;
+﻿using BankInterface.Data.Interface;
 using System.Text;
 
-namespace BankInterface.CreatingAccounts;
+namespace BankInterface.Service.CreatingAccounts;
 
-internal class DisplayAccounts
+public class DisplayAccounts
 {
     private List<IBankAccount> accounts;
 
